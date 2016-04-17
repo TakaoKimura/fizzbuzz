@@ -1,16 +1,11 @@
 class FizzBuzz
   def self.call(value)
-    if value == 0 then
-      value.to_s
-    elsif isFizzBuzz?(value) then
-      'FizzBuzz'
-    elsif isFizz?(value) then
-      'Fizz'
-    elsif isBuzz?(value) then
-      "Buzz"
-    else
-      value.to_s
+    if value > 0 then
+      return 'FizzBuzz' if isFizzBuzz?(value)
+      return 'Fizz' if isFizz?(value)
+      return 'Buzz' if isBuzz?(value)
     end
+    value.to_s
   end
 
   def self.isFizz?(value)
