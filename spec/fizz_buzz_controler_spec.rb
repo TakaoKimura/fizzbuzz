@@ -6,7 +6,7 @@ describe FizzBuzzControler do
       controler = FizzBuzzControler.new
       controler.fizzbuzz(3)
       controler.fizzbuzz(5)
-      controler.fizzbuzz(15)
+      expect(controler.fizzbuzz(15)).to eq 'FizzBuzz'
       controler.fizzbuzz(1)
       controler.fizzbuzz(0)
       expect(controler.memory).to eq ['Fizz','Buzz','FizzBuzz','1','0']

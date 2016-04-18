@@ -7,7 +7,9 @@ class FizzBuzzControler
   end
 
   def fizzbuzz(value)
-    @temporary.push(FizzBuzz.call(value))
+    result=FizzBuzz.call(value)
+    @temporary.push(result)
+    return result
   end
   def memory
     @temporary
